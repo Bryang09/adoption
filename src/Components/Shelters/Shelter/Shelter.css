@@ -1,0 +1,96 @@
+#shelterHeader {
+  width: 80vw;
+  margin: 7vh 3vw 3vh;
+  color: #fff;
+}
+
+.individualShelter hr {
+  margin-bottom: 0;
+}
+
+#shelterHeader span {
+  color: #fff;
+  padding-left: 0.6vw;
+}
+
+.results {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.result {
+  width: 100%;
+  margin: 1vh 4vw;
+  display: flex;
+  background: #fff;
+}
+.result img {
+  width: 40%;
+}
+.result:hover {
+  box-shadow: 0 2px 80px #000;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+#Name {
+  color: #124d9fcc;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+}
+
+.description h4 {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 1vh 0;
+}
+
+.description ul {
+  list-style: none;
+  text-align: center;
+  margin: 1vh 0;
+}
+.description h6 {
+  text-align: center;
+}
+.description span {
+  font-weight: 400;
+}
+
+.individualShelter {
+  background: rgba(3, 21, 37, 0.836);
+}
+
+@media only screen and (max-width: 1200px) {
+  .results {
+    min-width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .result {
+    flex-direction: column;
+  }
+  .result img {
+    width: 100%;
+    height: 50%;
+  }
+  .description {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #shelterHeader {
+    font-size: 1em;
+    margin: 2vh auto 1vh;
+  }
+}

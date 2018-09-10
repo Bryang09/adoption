@@ -1,0 +1,25 @@
+.Shelters h2 {
+  margin: 7vh 3vw;
+}
+
+.Shelter h3,
+.Shelter h4 {
+  margin-left: 2vw;
+}
+
+.Shelter h3 {
+  color: #01e6ef;
+}
+
+.Shelter h4 {
+  font-weight: 400;
+}
+
+.Shelter hr {
+  border: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.Shelters a {
+  text-decoration: none;
+}
