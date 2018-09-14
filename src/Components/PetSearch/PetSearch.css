@@ -1,0 +1,120 @@
+.PetSearch {
+  height: 100vh;
+}
+
+.Hero {
+  height: 55vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/1383813/pexels-photo-1383813.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.89);
+}
+
+.Box {
+  width: 70vw;
+  border: 2px solid #eeefee;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.Box h3 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.Box hr {
+  width: 50%;
+}
+.Box ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  width: 50%;
+  margin: 0 auto 2vh;
+}
+.Box ul li {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0.5vw;
+  line-height: 30px;
+  color: #01e6ef;
+  border-radius: 2px;
+  width: 30%;
+}
+
+.Box ul li:hover {
+  color: rgba(0, 245, 255, 0.5);
+}
+
+.Box a {
+  width: 20%;
+  line-height: 1px;
+  margin: 2vh auto;
+  background: linear-gradient(90deg, rgba(0, 245, 255, 0.5), #01e6ef);
+  color: rgba(255, 255, 255, 0.89);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.Box a:hover {
+  background: #01e6ef;
+}
+.section {
+  border: 1px solid #eeefee;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2vh;
+}
+.section h4 {
+  font-weight: 400;
+}
+
+.section form {
+  margin: 0 auto;
+}
+
+.section form input {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #01e6ef;
+  padding-bottom: 0.8vh;
+}
+.red {
+  background: red;
+}
+
+@media only screen and (max-width: 992px) {
+  .Box {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Box {
+    width: 90vw;
+  }
+  .Box a {
+    width: 40%;
+  }
+  .section {
+    width: 90%;
+  }
+  .section h4 {
+    font-size: 0.9em;
+  }
+  .section form {
+    width: 90%;
+  }
+  .Hero h1 {
+    font-size: 1.5em;
+  }
+}

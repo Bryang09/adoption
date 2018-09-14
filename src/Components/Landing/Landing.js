@@ -26,6 +26,7 @@ class Landing extends Component {
           glad to have you here! To begin, Please type in your Zip Code and we
           will find animal shelters near you!
         </h2>
+        <h4>Search Shelters Near You</h4>
         <form onChange={this.getZip} className="searchBox">
           <input
             type="text"
@@ -44,6 +45,9 @@ class Landing extends Component {
             </button>
           </Link>
         </form>
+        <Link to="/petfind">
+          <h4 id="Link">Looking for Pets near you?</h4>
+        </Link>
       </div>
     );
   }

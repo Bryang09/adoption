@@ -17,7 +17,7 @@ class Shelters extends Component {
     const location = this.props.location.state.input;
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/http://api.petfinder.com/shelter.find?format=json&key=${API_KEY}&location=${location}&count=10`
+        `https://cors-anywhere.herokuapp.com/http://api.petfinder.com/shelter.find?format=json&key=${API_KEY}&location=${location}&count=15`
       )
       .then(res =>
         this.setState({
@@ -37,23 +37,25 @@ class Shelters extends Component {
           ? this.state.shelters.map(shelter => {
               return (
                 <div className="Shelter" key={shelter.id.$t}>
-                  <Link
-                    to={{
-                      pathname: `/shelters/${shelter.id.$t}`,
-                      state: {
-                        id: shelter.id.$t,
-                        name: shelter.name.$t,
-                        phone: shelter.phone.$t,
-                        email: shelter.email.$t
-                      }
-                    }}
-                  >
-                    <h3>{shelter.name.$t}</h3>
-                  </Link>
                   <section>
+                    <Link
+                      to={{
+                        pathname: `/shelters/shelter.id.$`,
+                        state: {
+                          id: shelter.id.$t,
+                          name: shelter.name.$t,
+                          phone: shelter.phone.$t,
+                          email: shelter.email.$t
+                        }
+                      }}
+                    >
+                      {" "}
+                      <h3>{shelter.name.$t}</h3>
+                    </Link>
+
                     <h4>{shelter.address1.$t}</h4>
                     <h4>
-                      {shelter.city.$t},{shelter.state.$t}
+                      {shelter.city.$t},{shelter.state.$t} {shelter.zip.$t}
                     </h4>
                   </section>
                   <h4>{shelter.email.$t}</h4>

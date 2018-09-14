@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) {
+  .heading h2 {
+    font-size: 0.1em;
+  }
+}

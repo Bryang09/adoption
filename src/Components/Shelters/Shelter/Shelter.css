@@ -1,15 +1,15 @@
 #shelterHeader {
   width: 80vw;
   margin: 7vh 3vw 3vh;
-  color: #fff;
+  color: #000;
 }
 
-.individualShelter hr {
+.individual hr {
   margin-bottom: 0;
 }
 
 #shelterHeader span {
-  color: #fff;
+  color: #01e6ef;
   padding-left: 0.6vw;
 }
 
@@ -26,6 +26,8 @@
   margin: 1vh 4vw;
   display: flex;
   background: #fff;
+  box-shadow: 0 2px 80px #000;
+  padding: 0 10% 0 0;
 }
 .result img {
   width: 40%;
@@ -58,6 +60,10 @@
   text-align: center;
   margin: 1vh 0;
 }
+
+.description ul li {
+  margin: 2vh 0;
+}
 .description h6 {
   text-align: center;
 }
@@ -65,8 +71,8 @@
   font-weight: 400;
 }
 
-.individualShelter {
-  background: rgba(3, 21, 37, 0.836);
+.searchResults {
+  width: 70vw;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -78,13 +84,24 @@
 @media only screen and (max-width: 992px) {
   .result {
     flex-direction: column;
+    padding: 0;
+    margin: 2vh 0;
+    border: 0;
+    box-shadow: 0 2px 80px #000;
+    width: 90vw;
+    margin: 2vh auto;
   }
+
   .result img {
     width: 100%;
     height: 50%;
   }
+
   .description {
     width: 100%;
+  }
+  #Name {
+    margin-top: 1.5vh;
   }
 }
 
@@ -92,5 +109,13 @@
   #shelterHeader {
     font-size: 1em;
     margin: 2vh auto 1vh;
+  }
+
+  .result {
+    box-shadow: 0 2px 80px #000;
+    margin: 2vh 0;
+  }
+  .heading h2 {
+    font-size: 1.2em;
   }
 }
