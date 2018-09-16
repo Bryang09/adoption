@@ -2,7 +2,7 @@
   "name": "dist",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://username.github.io/adoption",
+  "homepage": "http://bryang09.github.io/adoption",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.4.2",
